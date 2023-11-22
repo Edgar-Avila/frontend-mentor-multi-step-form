@@ -22,7 +22,7 @@ const NavigationButtons: React.FC<Props> = ({
   mobile = false,
   ...props
 }) => {
-  const { currentStep, increaseStep, decreaseStep } = useStepContext();
+  const { currentStep, decreaseStep } = useStepContext();
 
   return (
     <div className={cn("mt-auto", mobile ? "flex md:hidden" : "hidden md:flex" ,className)} {...props}>
