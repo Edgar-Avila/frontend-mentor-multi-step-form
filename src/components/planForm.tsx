@@ -53,12 +53,12 @@ const PlanForm: React.FC = () => {
               <label
                 htmlFor={`plan-${plan.name}`}
                 className={cn(
-                  "border p-2 md:p-4 rounded-lg cursor-pointer flex-grow basis-0 flex gap-4 md:flex-col md:gap-12",
+                  "border p-2 md:p-4 rounded-lg cursor-pointer flex-grow basis-0 flex md:inline-block gap-4 md:flex-col",
                   selectedPlan === plan.name &&
                     "border-purplish-blue bg-magnolia"
                 )}
               >
-                <img src={plan.icon} alt={plan.name} />
+                <img src={plan.icon} alt={plan.name} className="md:mb-12"/>
                 <div>
                   <p className="font-bold text-marine-blue">
                     {capitalize(plan.name)}
